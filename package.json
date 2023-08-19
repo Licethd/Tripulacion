@@ -1,0 +1,32 @@
+{
+	"name": "tripulanteinte",
+	"version": "1.0.0",
+	"description": "",
+	"main": ".prettierrc.js",
+	"scripts": {
+		"test": "mvn --batch-mode -Dmaven.test.failure.ignore=true test -f ./tripulante",
+		"prepare": "husky install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dmsfourteamNur/Tripulante.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dmsfourteamNur/Tripulante/issues"
+	},
+	"homepage": "https://github.com/dmsfourteamNur/Tripulante#readme",
+	"devDependencies": {
+		"husky": "^8.0.0",
+		"lint-staged": "^13.0.3",
+		"prettier": "2.7.1",
+		"prettier-plugin-java": "^1.6.2"
+	},
+	"lint-staged": {
+		"*.{html,css,scss,js,ts,tsx,json,md,yaml,java}": [
+			"npx prettier --write ."
+		]
+	}
+}
